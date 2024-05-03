@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Drawing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Quarantine Breach</h1>
+  </div>
+    <canvas id="gridCanvas" width="800" height="800"></canvas>
+    <div class="slider-container">
+        <label for="slider1">Player 1 Health:</label>
+        <input type="range" min="0" max="100" value="50" class="slider" id="slider1" disabled>
+        <input type="text" id="value1" readonly>
+    </div>
+    <div class="slider-container">
+        <label for="slider2">Player 2 Health:</label>
+        <input type="range" min="0" max="100" value="75" class="slider" id="slider2" disabled>
+        <input type="text" id="value2" readonly>
+        
+    </div>
+    <button id="rollButton">Next Turn</button>
+    <div id="log"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+    
